@@ -1,17 +1,14 @@
-resource_group_name   = "//any name"
+resource_group_name   = "devops-rg"
 location              = "West Europe"
-tags                  = { env = "production" }
-
-vnet_name             = "//any name"
+tags                  = { "env" : "production" }
+vnet_name             = "devops-vnet"
 cidr_block            = ["10.0.0.0/16"]
 subnet_cidr_block     = ["10.0.2.0/24"]
-subnet_name           = "//any name"
-
-public_ip_address     = "//any name"
-nic_name              = "//any name"         
-nsg_name              = "//any name"
-
-virtual_machine_name  = "//any name"
+subnet_name           = "devops-subnet"
+public_ip_address     = "devops-public-ip"
 disksize              = "Standard_D2s_v3"
-ip_configuration_name = "//any name"
-os_disk_name          = "//any name"
+nic_name              = "devops-public-ip"
+nsg_name              = "devops-nsg"
+virtual_machine_name  = "devops-virtual-machine"
+ip_configuration_name = "devops-ipconfiguration"
+os_disk_name = "devops-os-disk"
